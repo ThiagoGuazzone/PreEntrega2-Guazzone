@@ -1,0 +1,73 @@
+@mixin costado {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin: 70px;
+    background-color: cyan;
+    border-radius: 5px;
+}
+@mixin inline {
+    display: inline-block;
+}
+
+main{
+ .ventas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin: 36px 0;
+  }
+  
+  .pepito {
+    @include costado;
+    @include inline;
+  }
+  
+  .fotoVenta {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .tituloVenta {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: fuchsia;
+  }
+  
+  .compra {
+    padding: 10px 20px;
+    background-color: fuchsia;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .hola {
+    color: fuchsia;
+  }
+  
+  .parrafo, h5 {
+    color: black;
+  }
+  
+  .carrusel {
+    width: 2000px;
+  }
+  .carta {
+    @include inline;
+    margin: 300px;
+  }
+}
