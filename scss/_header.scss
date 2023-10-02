@@ -3,7 +3,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: turquoise;
+    background-color: $color-turquesa;
     top: 0;
     
  .miLogo {
@@ -12,7 +12,7 @@ header{
  }
   
   .forFondo {
-    background-color: pink;
+    background-color: $color-rosa;
     border-radius: 50px;
   }
   
@@ -21,8 +21,8 @@ header{
   
   
   li:hover {
-    background-color: turquoise;
-    color: pink;
+    background-color: $color-turquesa;
+    color: $color-rosa;
     border-radius: 15px;
   }
   

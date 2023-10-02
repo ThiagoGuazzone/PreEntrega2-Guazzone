@@ -1,4 +1,4 @@
-aside .whatsApp {
+footer .whatsApp {
   width: 80px;
   position: fixed;
   bottom: 20px;
@@ -98,5 +98,101 @@ body {
   background-color: pink;
 }
 
+.whatsApp {
+  width: 80px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+footer {
+  
+ 
+  background-color: turquoise; 
+    color: black; 
+    padding: 30px 0; 
+  }
+  
+  
+  .footer-title {
+    font-size: 18px; 
+    margin-bottom: 10px; 
+  }
+  
+  .footer-payship-img {
+    margin-right: 10px; 
+  }
+  
+  
+  .contact-data {
+    text-align: center;
+  }
+  
+  .footer-list {
+    list-style: none; 
+    padding: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 10px; 
+    
+   
+  font-size: 16px; 
+  }
+  
+  
+  .svg-text-fill {
+    color: #fff; 
+    margin-right: 5px; 
+    
+   
+  font-size: 20px; 
+  }
+  .svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+  }
+  
+  .map-container {
+    position: relative;
+    overflow: hidden;
+    
+   
+  padding-top: 75%; 
+  }
+  
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  .carta {
+    width: 100%; /* Asegura que la tarjeta ocupe todo el ancho disponible */
+    max-width: 18rem; /* Establece un ancho máximo para la tarjeta */
+  }
+  
+  /* Estilos para la imagen dentro de la tarjeta */
+  .fotoEmpleado {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de aspecto original de la imagen */
+  }
+  
+  /* Estilos para el texto dentro de la tarjeta */
+  .card-text {
+    
+   
+  font-size: 16px; /* Tamaño de fuente del texto */
+    
+   
+  text-align: center; /* Centra el texto horizontalmente */
+  }
 /*# sourceMappingURL=estilo.css.map */
 
