@@ -76,53 +76,6 @@ main h5 {
 }
 
 
-
-
-footer {
-
-
-  background-color: turquoise;
-  color: black;
-  padding: 30px 0;
-  margin: 0 auto;
-}
-
-
-.footer-title {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.footer-payship-img {
-  margin-right: 10px;
-}
-
-
-.contact-data {
-  text-align: center;
-}
-
-.footer-list {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-list li {
-  margin-bottom: 10px;
-
-
-  font-size: 16px;
-}
-
-
-.svg-text-fill {
-  color: #fff;
-  margin-right: 5px;
-
-
-  font-size: 20px;
-}
-
 .svg-inline--fa {
   display: inline-block;
   font-size: inherit;
@@ -197,6 +150,113 @@ footer {
   margin: 10px 0;
   color: #333;
 }
+
+.navbar {
+  background-color: turquoise; 
+  color: #fff; 
+  
+ 
+padding: 10px 0; 
+}
+
+
+
+
+.navbar-nav .nav-link {
+  
+ 
+color: black; 
+  padding: 10px 20px; 
+  &:hover{
+    background-color: pink;
+    border-radius: 15px;
+  }
+
+}
+
+
+.navbar-nav .nav-link.active {
+  background-color: turquoise;
+}
+
+
+.navbar-nav .nav-link svg {
+  width: 24px; 
+  height: 24px; 
+  margin-right: 5px; 
+}
+
+
+.ulcontact {
+  
+ 
+list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
+
+.ulcontact li {
+  display: inline-block; 
+  margin-left: 10px; 
+}
+
+
+.navbar-toggler-icon {
+  
+  border-radius: 4px; 
+}
+
+
+
+
+#carouselExample {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid turquoise;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  
+ 
+background: rgba(0, 0, 0, 0.5);
+}
+
+
+.carousel-indicators {
+  
+ 
+position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  
+ 
+margin: 0 5px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
 
 
 
