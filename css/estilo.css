@@ -1,5 +1,9 @@
 .navbar {
-  background-color: pink;
+  background-color: #ff69b4;
+}
+
+.navbar p {
+  font-size: 20px;
 }
 
 .navbar-brand img {
@@ -11,19 +15,51 @@
   margin: 0 auto;
 }
 
-.ulcontact {
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
+.navbar {
+  background-color: turquoise;
+  color: #fff;
+  padding: 10px 0;
 }
 
+.navbar-nav .nav-link {
+  color: black;
+  padding: 10px 20px;
+}
+.navbar-nav .nav-link.active {
+  background-color: turquoise;
+}
+.navbar-nav .nav-link svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.ulcontact {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.ulcontact li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.navbar-toggler-icon {
+  border-radius: 4px;
+}
+
+main {
+  background-image: url(/img/logo-laime.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 main .ventas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
   margin: 36px 0;
 }
-
 main .pepito {
   display: inline-block;
   display: flex;
@@ -33,7 +69,6 @@ main .pepito {
   border-radius: 5px;
   display: inline-block;
 }
-
 main .fotoVenta {
   width: 100%;
   height: 200px;
@@ -41,20 +76,17 @@ main .fotoVenta {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-
 main .tituloVenta {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
 }
-
 main .precio {
   font-size: 24px;
   font-weight: bold;
   color: fuchsia;
 }
-
 main .compra {
   padding: 10px 20px;
   background-color: fuchsia;
@@ -65,16 +97,241 @@ main .compra {
   cursor: pointer;
   border: none;
 }
-
 main .hola {
   color: fuchsia;
 }
-
 main .parrafo,
 main h5 {
   color: black;
 }
 
+.map-container {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.map-container iframe {
+  max-width: 1000px;
+  max-height: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+main {
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.card.carta {
+  margin: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-right: 300px;
+}
+.card.carta img.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+.card.carta .card-body {
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.card.carta p.card-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+.block-highlight-header.highlight-large.no-highlight,
+.node--article-header.highlight-large.no-highlight {
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.block-highlight-header.highlight-large,
+.node--article-header.highlight-large {
+  color: #fff;
+  margin-bottom: 20px;
+  padding-bottom: 70px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.bg-house-green {
+  background-color: purple;
+}
+
+.block-highlight-header,
+.node--article-header {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.contacto-form {
+  text-align: start;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+  color: #fafafa;
+  text-shadow: 2px 3px 3px rgb(13, 0, 0);
+  background-color: lightblue;
+  padding: 4%;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+label {
+  padding-top: 2%;
+  padding-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 7px;
+}
+
+@media (max-width: 1240px) {
+  .contacto-form {
+    margin-top: 20%;
+    margin-right: 5%;
+    margin-left: 7%;
+    margin-bottom: 2%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px 3px pink;
+    background-color: lightblue;
+    padding: 4%;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+.botones-contacto button {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  width: 48%;
+  padding: 1.5%;
+  border-radius: 25px;
+  font-size: medium;
+  margin-left: 1.5%;
+  border: none;
+}
+.botones-contacto button:hover {
+  box-shadow: 0px 0px 5px pink;
+  background-color: turquoise;
+  color: #fafafa;
+}
+
+.tituloIndex {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: fuchsia;
+  font-family: "Pacifico", cursive;
+}
+
+.parrafoIndex {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: fuchsia;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: "Teko", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .tituloIndex {
+    font-size: 28px;
+  }
+  .parrafoIndex {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+#carouselExampleCaptions {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  max-height: 800px;
+  max-width: 1000px;
+}
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+@media (max-width: 772px) {
+  .carousel-item {
+    height: 500px;
+    width: 100%;
+  }
+  .carousel-item img {
+    height: 100%;
+  }
+  #carouselExampleCaptions {
+    width: 100%;
+  }
+}
+.mainempleados {
+  padding-bottom: 70px;
+}
+
+.fotocara {
+  margin: 0 auto;
+}
+
+.ftfotocara {
+  margin-top: 70px;
+}
+
+.fotocara img {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.textofotocara {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+.textofotocara p {
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+}
+
+@media (max-width: 1391px) {
+  .fotocara img {
+    width: 100%;
+  }
+}
+footer {
+  margin-top: 0;
+  padding-top: 10px;
+  background-color: #f8f9fa;
+  margin-top: 50px;
+  background-color: turquoise;
+}
 
 .svg-inline--fa {
   display: inline-block;
@@ -84,182 +341,56 @@ main h5 {
   vertical-align: -0.125em;
 }
 
-.map-container {
-  position: relative;
-  overflow: hidden;
-
-
-  padding-top: 75%;
-}
-
-.map-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
 body {
-  background-color: pink;
+  background-color: #ff69b4;
 }
 
-main {
-  margin-bottom: 0;
-  margin-top: 50px;
-}
-
-footer {
-  margin-top: 0;
-  padding-top: 10px;
-  background-color: #f8f9fa;
-  margin-top: 50px;
-  background-color: turquoise;
-}
-
-.card.carta {
-  margin: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  margin-right: 300px;
-  
-
-}
-
-.card.carta img.card-img-top {
-
-
-  max-width: 100%;
-
-
-  height: auto;
-}
-
-.card.carta .card-body {
-  text-align: center;
-  background-color: #f0f0f0;
-}
-
-.card.carta p.card-text {
-  font-size: 18px;
-
-
-  font-weight: bold;
-  margin: 10px 0;
-  color: #333;
-}
-
-.navbar {
-  background-color: turquoise; 
-  color: #fff; 
-  
- 
-padding: 10px 0; 
-}
-
-
-
-
-.navbar-nav .nav-link {
-  
- 
-color: black; 
-  padding: 10px 20px; 
-  &:hover{
-    background-color: pink;
-    border-radius: 15px;
+@media (max-width: 1000px) {
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
   }
-
 }
-
-
-.navbar-nav .nav-link.active {
-  background-color: turquoise;
+@media (max-width: 1240px) {
+  .contacto-form {
+    margin-top: 20%;
+    margin-right: 5%;
+    margin-left: 7%;
+    margin-bottom: 2%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px 3px pink;
+    background-color: lightblue;
+    padding: 4%;
+    border-radius: 10px;
+    text-align: center;
+  }
 }
-
-
-.navbar-nav .nav-link svg {
-  width: 24px; 
-  height: 24px; 
-  margin-right: 5px; 
+@media (max-width: 600px) {
+  .tituloIndex {
+    font-size: 28px;
+  }
+  .parrafoIndex {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
-
-
-.ulcontact {
-  
- 
-list-style-type: none; 
-  margin: 0; 
-  padding: 0; 
+@media (max-width: 772px) {
+  .carousel-item {
+    height: 500px;
+    width: 100%;
+  }
+  .carousel-item img {
+    height: 100%;
+  }
+  #carouselExampleCaptions {
+    width: 100%;
+  }
 }
-
-
-.ulcontact li {
-  display: inline-block; 
-  margin-left: 10px; 
+@media (max-width: 1391px) {
+  .fotocara img {
+    width: 100%;
+  }
 }
-
-
-.navbar-toggler-icon {
-  
-  border-radius: 4px; 
-}
-
-
-
-
-#carouselExample {
-  margin-top: 20px;
-  text-align: center;
-}
-
-
-.carousel-inner img {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid turquoise;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
-  
- 
-background: rgba(0, 0, 0, 0.5);
-}
-
-
-.carousel-indicators {
-  
- 
-position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.carousel-indicators li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  
- 
-margin: 0 5px;
-  background: #fff;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-
-
-
-
-
 
 /*# sourceMappingURL=estilo.css.map */

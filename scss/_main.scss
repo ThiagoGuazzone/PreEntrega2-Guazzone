@@ -1,52 +1,43 @@
 @mixin costado {
-    display: inline-block;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  margin: 70px;
+  background-color: cyan;
+  border-radius: 5px;
+}
+
+@mixin inline {
+  display: inline-block;
+}
+
+@mixin aling {
+  text-align: center;
+}
+
+main {
+  background-image: url(/img/logo-laime.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .ventas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin: 36px 0;
+  }
+
+  .pepito {
+    @include inline;
     display: flex;
     align-items: center;
     margin: 70px;
     background-color: $color-celeste;
     border-radius: 5px;
-}
-@mixin inline {
-    display: inline-block;
-}
-
-main{
- .ventas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    
-  }
-  
-.fotito{
-width: 10px;
-}
-.map-container {
-  position: relative;
-  overflow: hidden;
-  padding-top: 75%;
-
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-}
-
-
-
-  .pepito {
-    @include costado;
     @include inline;
   }
-  
+
   .fotoVenta {
     width: 100%;
     height: 200px;
@@ -54,47 +45,273 @@ width: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
   }
-  
+
   .tituloVenta {
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
+    @include aling;
     margin-bottom: 10px;
   }
-  
+
   .precio {
     font-size: 24px;
     font-weight: bold;
     color: $color-fucsia;
   }
-  
+
   .compra {
     padding: 10px 20px;
     background-color: $color-fucsia;
-    color: black;
+    color: $color-negro;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 5px;
     cursor: pointer;
     border: none;
   }
-  
+
   .hola {
     color: $color-fucsia;
-   
   }
-  
-  .parrafo, h5 {
-    color: $color-negro;
-  }
-  
-  .carrusel {
-    width: 2000px;
-  }
-  .carta {
-    @include inline;
-    margin: 300px;
-    
 
+  .parrafo,
+  h5 {
+    color: black;
+  }
+}
+
+.map-container {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  @include aling;
+
+  iframe {
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+main {
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.card.carta {
+  margin: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-right: 300px;
+
+  img.card-img-top {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-body {
+    @include aling;
+    background-color: #f0f0f0;
+  }
+
+  p.card-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+}
+
+.block-highlight-header.highlight-large.no-highlight,
+.node--article-header.highlight-large.no-highlight {
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.block-highlight-header.highlight-large,
+.node--article-header.highlight-large {
+  color: #fff;
+  margin-bottom: 20px;
+  padding-bottom: 70px;
+  padding-top: 30px;
+  @include aling;
+}
+
+.bg-house-green {
+  background-color: $color-purple;
+}
+
+.block-highlight-header,
+.node--article-header {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.contacto-form {
+  text-align: start;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+  color: #fafafa;
+  text-shadow: 2px 3px 3px rgb(13, 0, 0);
+  background-color: $color-celesteclaro;
+  padding: 4%;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+label {
+  padding-top: 2%;
+  padding-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 7px;
+}
+
+@media (max-width: 1240px) {
+  .contacto-form {
+    margin-top: 20%;
+    margin-right: 5%;
+    margin-left: 7%;
+    margin-bottom: 2%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px 3px pink;
+    background-color: $color-celesteclaro;
+    padding: 4%;
+    border-radius: 10px;
+    @include aling;
+  }
+}
+
+.botones-contacto button {
+  background-color: $color-purple;
+  color: $color-blanco;
+  font-weight: bold;
+  width: 48%;
+  padding: 1.5%;
+  border-radius: 25px;
+  font-size: medium;
+  margin-left: 1.5%;
+  border: none;
+
+  &:hover {
+    box-shadow: 0px 0px 5px pink;
+    background-color: $color-turquesa;
+    color: #fafafa;
+  }
+}
+
+
+.tituloIndex {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-fucsia;
+  font-family: 'Pacifico', cursive;
+}
+
+.parrafoIndex {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: $color-fucsia;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: 'Teko', sans-serif;
+}
+
+@media (max-width: 600px) {
+  .tituloIndex {
+    font-size: 28px;
+  }
+
+  .parrafoIndex {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+#carouselExampleCaptions {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  max-height: 800px;
+  max-width: 1000px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+main {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+@media (max-width: 772px) {
+  .carousel-item {
+    height: 500px;
+    width: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  #carouselExampleCaptions {
+    width: 100%;
+  }
+}
+
+.mainempleados {
+  padding-bottom: 70px;
+}
+
+.fotocara {
+  margin: 0 auto;
+}
+
+.ftfotocara {
+  margin-top: 70px;
+}
+
+.fotocara img {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.textofotocara {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+
+  p {
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+  }
+}
+
+@media (max-width: 1391px) {
+  .fotocara img {
+    width: 100%;
   }
 }

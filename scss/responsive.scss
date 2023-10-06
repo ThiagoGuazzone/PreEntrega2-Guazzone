@@ -1,0 +1,54 @@
+@media (max-width: 1000px) {
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1240px) {
+    .contacto-form {
+        margin-top: 20%;
+        margin-right: 5%;
+        margin-left: 7%;
+        margin-bottom: 2%;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 3px 3px pink;
+        background-color: lightblue;
+        padding: 4%;
+        border-radius: 10px;
+        @include aling;
+    }
+}
+
+@media (max-width: 600px) {
+    .tituloIndex {
+        font-size: 28px;
+    }
+
+    .parrafoIndex {
+        font-size: 16px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 772px) {
+    .carousel-item {
+        height: 500px;
+        width: 100%;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    #carouselExampleCaptions {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1391px) {
+    .fotocara img {
+        width: 100%;
+    }
+}
